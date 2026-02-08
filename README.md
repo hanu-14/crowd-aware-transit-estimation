@@ -91,3 +91,34 @@ This project explores how **human crowd signals**, interpreted through
 reasoning systems, could act as a *complementary layer*—especially
 when traditional signals are weak or delayed.
 
+---
+
+## Handling Uncertainty and Confidence
+
+Crowd-derived signals are inherently noisy and incomplete.
+A single complaint or confirmation does not represent ground truth.
+
+For this reason, the system does **not** attempt to output
+precise predictions or exact arrival times.
+
+Instead, it produces **confidence-oriented assessments**, such as:
+- High confidence: likely on time
+- Medium confidence: uncertain state
+- Low confidence: possible delay
+
+This mirrors how a reasoning system (or LLM) would operate:
+by synthesizing imperfect signals and expressing
+**degrees of belief**, not absolute certainty.
+
+## Why Qualitative Outputs Are Intentional
+
+In real-world transit systems:
+- Human signals arrive earlier than sensor updates
+- Data may be contradictory
+- Overconfidence can be misleading
+
+Qualitative confidence bands are safer, more interpretable,
+and easier to integrate as a *supplementary layer*
+to existing tracking systems.
+
+
