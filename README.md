@@ -65,3 +65,29 @@ This repository focuses on **conceptual clarity and reasoning design**.
 ## Disclaimer
 This is an exploratory and educational project.
 It is not intended for production deployment.
+
+
+
+## How the Code Works
+
+1. A mock crowd-signal file (`sample_crowd_signals.json`) represents
+   simplified human-derived observations such as complaints,
+   confirmations, and crowd size.
+
+2. The Python module reads this input and applies a
+   **rule-based reasoning layer** that mimics how an LLM
+   might qualitatively assess uncertainty.
+
+3. The output is **not a prediction**, but a confidence-oriented
+   assessment (on-time / delayed / uncertain).
+
+This keeps the project transparent, explainable, and extensible.
+
+## Why This Matters
+
+Most transit systems rely on sensors and schedules.
+
+This project explores how **human crowd signals**, interpreted through
+reasoning systems, could act as a *complementary layer*—especially
+when traditional signals are weak or delayed.
+
