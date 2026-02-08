@@ -116,9 +116,21 @@ In real-world transit systems:
 - Human signals arrive earlier than sensor updates
 - Data may be contradictory
 - Overconfidence can be misleading
-
-Qualitative confidence bands are safer, more interpretable,
+-Qualitative confidence bands are safer, more interpretable,
 and easier to integrate as a *supplementary layer*
 to existing tracking systems.
+
+---
+
+## Design Philosophy
+
+This project prioritizes:
+- Explainability over prediction accuracy
+- Confidence adjustment over hard outputs
+- Human signals as complementary inputs
+
+The intent is to explore reasoning patterns,
+not to replace existing production systems.
+
 
 
